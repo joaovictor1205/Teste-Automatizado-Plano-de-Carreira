@@ -16,7 +16,7 @@ public class Main {
 
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\joao.goncalves\\Downloads\\chromedriver.exe");
         this.driver = new ChromeDriver();
-        driver.get("http://10.10.0.47:8080/login");
+        driver.get("http://10.10.0.47:8080/login"); //URL
 
     }
 
@@ -25,7 +25,7 @@ public class Main {
 
         Login login = new Login(driver);
         assertTrue(login.loginSucesso());
-        driver.close();
+        driver.close(); //fechar o navegador
 
     }
 }

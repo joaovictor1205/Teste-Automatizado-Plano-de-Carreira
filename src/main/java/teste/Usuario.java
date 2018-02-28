@@ -21,6 +21,6 @@ public class Usuario {
         txtSenha.sendKeys(senha);
 
         WebElement botaoEntrar = driver.findElement(By.xpath("//button[@class='btn btn-primary btn-block']"));
-        botaoEntrar.click();
+        botaoEntrar.click(); //Clicar no botão
     }
 }
