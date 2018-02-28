@@ -16,16 +16,16 @@ public class Main {
 
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\joao.goncalves\\Downloads\\chromedriver.exe");
         this.driver = new ChromeDriver();
-        driver.get("http://10.10.0.47:8080/login"); //URL
+        driver.get("http://10.10.0.47:8080/login"); //URL do projeto
 
     }
 
     @Test
     public void login() throws InterruptedException {
 
-        Login login = new Login(driver);
-        assertTrue(login.loginSucesso());
-        driver.close(); //fechar o navegador
+        Login login = new Login(driver);  //Chama a função para realizar o login
+        assertTrue(login.loginSucesso()); //Verificar se logou corretamente
+        driver.close();                   //Encerra o navegador
 
     }
 }

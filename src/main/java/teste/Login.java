@@ -15,10 +15,10 @@ public class Login{
 
     public boolean loginSucesso() throws InterruptedException {
 
-        usuario.logar("exemplo", "exemplo");
+        usuario.logar("exemplo", "exemplo");    //Preencher os campos da tela de Login
 
-        Thread.sleep(1000);
-        return driver.getPageSource().contains("Tutor : ");
+        Thread.sleep(1000);                            //Aguardar a página atualizar
+        return driver.getPageSource().contains("Tutor : ");  //Verifica se o usuário logou corretamente
 
     }
 
